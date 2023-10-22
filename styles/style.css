@@ -11,7 +11,7 @@ label, input, td, th, p {
 td {
     padding: 1px 8px;
     white-space: pre-wrap;
-    max-width: 200px;
+    max-width: 150px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
