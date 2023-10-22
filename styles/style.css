@@ -8,6 +8,15 @@ label, input, td, th, p {
     font-size: 1.2em;
 }
 
+td {
+    padding: 1px 8px;
+    white-space: pre-wrap;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 a {
     color: black;
     text-decoration: none;
