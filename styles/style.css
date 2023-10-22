@@ -17,7 +17,7 @@ label, input, td, th, p {
     font-family: var(--primary-font);
 }
 
-td {
+td:not(.td_email) {
     padding: 1px 8px;
     white-space: pre-wrap;
     max-width: 150px;
