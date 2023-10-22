@@ -84,12 +84,14 @@ function viewPass() {
 
 function deleteAccount() {
     if (window.confirm('Sua conta será deletada!')) {
-        console.log('conta deletada')
+        users.splice(getIndex(userData.email), 1)
+        localStorage.setItem('userList', JSON.stringify(users))
+        console.log('Conta deletada!')
         localStorage.removeItem('userData')
         localStorage.setItem('isLoged', 'false')
         window.location = 'index.html'
     } else {
-        console.log('conta mantida')
+        window.alert('Conta mantida!')
     }
 }
 
@@ -98,7 +100,6 @@ function deleteAccount() {
 function getUsers() {
     for(let index in users) {
         const {user, email} = users[index]
-        console.log(index)
         accoutList.innerHTML += `
         <tr>
             <td contenteditable="${userData.email !== email}">${user}</td>
