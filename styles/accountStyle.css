@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    width: 95vw;
+    max-width: 920px;
+    margin: auto;
+}
+
+.left {
+    
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.right {
+    min-width: 500px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightgray;
+}
+
+tr {
+    background-color: #f5f5f5;
+}
+
+td {
+    padding: 1px 8px;
+}
+
+tr:nth-child(even) {
+    background: #c9c9c9;
+}

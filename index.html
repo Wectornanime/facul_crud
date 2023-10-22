@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/libStyle.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/booksScript.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="efeito-vidro">
+        <h1>Registro de livros</h1>
+        <p id="userName"></p>
+        <button id="btn_log" onclick="log()">Login</button>
+        <button><a href="account.html">Account</a></button>
+    </header>
+
+    <main>
+        <section class="left efeito-vidro">
+            <form method="post">
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name">
+                <label for="author">Autor: </label>
+                <input type="text" name="author" id="author">
+                <label for="year">Ano: </label>
+                <input type="number" name="year" id="year" min="0" pattern="0123456789">
+                <div><button onclick="envLivro()">Enviar</button></div>
+            </form>
+        </section>
+
+        <section class="right efeito-vidro">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Ano</th>
+                    </tr>
+                </thead>
+                <tbody id="bookList">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+</body>
+</html>

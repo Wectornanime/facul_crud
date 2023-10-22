@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/accountStyle.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/accountScript.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="efeito-vidro">
+        <h1>Controle de contas</h1>
+        <p id="userName"></p>
+        <button id="btn_log" onclick="log()">Login</button>
+        <button><a href="index.html">Livros</a></button>
+    </header>
+    <main>
+        <section class="left efeito-vidro">
+            <h2>Esta conta</h2>
+            <form method="post">
+                <label for="user">Username: </label>
+                <input type="text" name="user" id="user">
+                <div><button id="btn_name" onclick="updateName()" disabled>Trocar nome</button></div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+                <div><button id="btn_email" onclick="updateEmail()" disabled>Alterar email</button></div>
+                <h3>Trocar senha:</h3>
+                <label for="oldpass">Old password: </label>
+                <input type="password" name="oldpass" id="oldpass">
+                <label for="newpass">New password: </label>
+                <input type="password" name="newpass" id="newpass">
+                <label for="repass">Repeat password: </label>
+                <input type="password" name="repass" id="repass">
+                <div>
+                    <button id="btn_pass" onclick="updatePass()" disabled>Swap password</button>
+                    <button onclick="deleteAccount()">Delete account</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="right efeito-vidro">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="accountList">
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
