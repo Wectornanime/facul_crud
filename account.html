@@ -21,22 +21,22 @@
         <section class="left efeito-vidro">
             <h2>Esta conta</h2>
             <form method="post">
-                <label for="user">Username: </label>
+                <label for="user">Nome de usuário: </label>
                 <input type="text" name="user" id="user">
                 <div><button id="btn_name" onclick="updateName()" disabled>Trocar nome</button></div>
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email">
-                <div><button id="btn_email" onclick="updateEmail()" disabled>Alterar email</button></div>
+                <div><button id="btn_email" onclick="updateEmail()" disabled>Trocar email</button></div>
                 <h3>Trocar senha:</h3>
-                <label for="oldpass">Old password: </label>
+                <label for="oldpass">Senha antiga: </label>
                 <input type="password" name="oldpass" id="oldpass">
-                <label for="newpass">New password: </label>
+                <label for="newpass">Nova senha: </label>
                 <input type="password" name="newpass" id="newpass">
-                <label for="repass">Repeat password: </label>
+                <label for="repass">Repetir nova senha: </label>
                 <input type="password" name="repass" id="repass">
                 <div>
-                    <button id="btn_pass" onclick="updatePass()" disabled>Swap password</button>
-                    <button onclick="deleteAccount()">Delete account</button>
+                    <button id="btn_pass" onclick="updatePass()" disabled>Trocar senha</button>
+                    <button onclick="deleteAccount()">Deletar conta</button>
                 </div>
             </form>
         </section>

@@ -103,8 +103,8 @@ function getUsers() {
         <tr>
             <td contenteditable="${userData.email !== email}">${user}</td>
             <td contenteditable="${userData.email !== email}">${email}</td>
-            <td><button onclick="deleteUser(${index})">delete</button></td>
-            <td><button onclick="updateUser(${index})">update</button></td>
+            <td><button onclick="deleteUser(${index})">Deletar</button></td>
+            <td><button onclick="updateUser(${index})">Atualizar</button></td>
         </tr>
         `
     }

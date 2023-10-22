@@ -49,16 +49,16 @@ function doLogin() {
 
 function toSignup() {
     form.innerHTML = `
-        <label for="user">Username: </label>
+        <label for="user">Nome de usuário: </label>
         <input type="text" name="user" id="user">
         <label for="email">Email: </label>
         <input type="email" name="email" id="email">
-        <label for="pass">Password: </label>
+        <label for="pass">Senha: </label>
         <input type="password" name="pass" id="pass">
-        <label for="repass">Repeat password: </label>
+        <label for="repass">Repetir senha: </label>
         <input type="password" name="repass" id="repass">
         <div>
-            <button onclick="doSignup()">Create Account</button>
+            <button onclick="doSignup()">Criar conta</button>
             <button onclick="toLogin()">Sign-in</button>
         </div>
     `
