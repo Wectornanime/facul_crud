@@ -9,8 +9,8 @@ Não é necessário realizar nenhuma instalação, basta acessar esse [link](htt
 
 - Anna Cecilia
 - [@Camile Stefany](https://github.com/camsste)
-- [@heldhma](https://www.github.com/heldhma)
-- Fagner Clemente
+- [@Heldhma](https://www.github.com/heldhma)
+- [@Fagner Clemente](https://github.com/fagcsilva)
 - João Oliveira
 - [@Wectornanime](https://www.github.com/octokatherine)
 
